@@ -1,0 +1,45 @@
+{
+  "name": "copado-sentinel",
+  "version": "1.0.0",
+  "description": "Autonomous Self-Healing DevOps & Release Agent for Copado Agentia Headless",
+  "main": "dist/index.js",
+  "bin": {
+    "copado-sentinel": "./bin/sentinel.js",
+    "sentinel": "./bin/sentinel.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/sentinel.js",
+    "dev": "ts-node src/index.ts",
+    "demo": "node ./bin/sentinel.js loop --mock",
+    "mcp": "node ./bin/sentinel.js mcp",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "copado",
+    "agentia",
+    "salesforce",
+    "devops",
+    "cicd",
+    "mcp",
+    "self-healing",
+    "ai-agent",
+    "hackathon"
+  ],
+  "author": "Copado Sentinel Team",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.10",
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
